@@ -11,42 +11,26 @@
     </header>
     <main>
         <section id="pokemon-input" class="">
-            <div>
+            <div class="pokemon-search">
                 <p>Search for Pokémon Name or ID</p>
                 <input type="text" id="search-input">
                 <button id="search-button">Search</button>
             </div>
         </section>
         <section>
-            <div id="pokemon-info">
-                <table>
-                    <tr>
-                        <th>Base</th>
-                        <th>Stats</th>
-                    </tr>
-                    <tr>
-                        <td>HP:</td>
-                        <td id="hp">0</td>
-                    </tr>
-                    <tr>
-                        <td>Attack:</td>
-                        <td id="attack">0</td>
-                    </tr>
-                    <tr>
-                        <td>Defense:</td>
-                        <td id="defense">0</td>
-                    </tr>
-                    <tr>
-                        <td>Sp. Attack:</td>
-                        <td id="special-attack">0</td>
-                    </tr>
-                    <tr>
-                        <td>Sp. Defense:</td>
-                        <td></td>
-                    </tr>
-                </table>
+            <div>
+                <span id="pokemon-name"></span>
+                <span id="pokemon-id"></span>
+            </div>
+            <div>
+                <span id="pokemon-weight"></span>
+                <span id="pokemon-height"></span>
             </div>
         </section>
+        <section>
+            <div id="sprite"></div>
+        </section>    
     </main>
+    <script src="./js/script.js"></script>
 </body>
 </html>
