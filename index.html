@@ -4,32 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokemon Pokedex</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="container">
     <header>
         <h1>Pokemon Pokedex</h1>
     </header>
     <main>
-        <section id="pokemon-input" class="">
-            <div class="pokemon-search">
-                <p>Search for Pokémon Name or ID</p>
-                <input type="text" id="search-input">
-                <button id="search-button">Search</button>
-            </div>
-        </section>
-        <section>
-            <div>
+        <div id="container"></div>
+        <form id="pokemon-form">
+            <label for="search-input">Search for Pokémon Name or ID</label><br>
+            <input type="text" id="search-input" required>
+            <button id="search-button">Search</button>
+        </form>
+        <div id="pokemon-info">
+            <div id="pokemon-display-top">
                 <span id="pokemon-name"></span>
                 <span id="pokemon-id"></span>
             </div>
             <div>
-                <span id="pokemon-weight"></span>
-                <span id="pokemon-height"></span>
+                <span id="weight"></span>
+                <span id="height"></span>
             </div>
-        </section>
-        <section>
-            <div id="sprite"></div>
-        </section>    
+            <div id="pokemon-image">
+                <div id="image-display"></div>
+                <div id="types"></div>
+            </div>
+            <div id="pokemon-display-bottom">
+                <table id="pokemon">
+                    <tr>
+                        <th>BASE</th>
+                        <th>STATS</th>
+                    </tr>
+                    <tr>
+                        <td>HP:</td>
+                        <td id="hp"></td>
+                    </tr>
+                    <tr>
+                        <td>Attack:</td>
+                        <td id="attack"></td>
+                    </tr>
+                    <tr>
+                        <td>Defense:</td>
+                        <td id="defense"></td>
+                    </tr>
+                    <tr>
+                        <td>Sp Attack:</td>
+                        <td id="special-attack"></td>
+                    </tr>
+                    <tr>
+                        <td>Sp Defense:</td>
+                        <td id="special-defense"></td>
+                    </tr>
+                    <tr>
+                        <td>Speed:</td>
+                        <td id="speed"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
     </main>
     <script src="./js/script.js"></script>
 </body>
