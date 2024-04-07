@@ -14,56 +14,59 @@
         <h1>Pokemon Pokedex</h1>
     </header>
     <main>
-        <div id="container"></div>
-        <form id="pokemon-form">
-            <label for="search-input">Search for Pokémon Name or ID</label><br>
-            <input type="text" id="search-input" required>
-            <button id="search-button">Search</button>
-        </form>
-        <div id="pokemon-info">
-            <div id="pokemon-display-top">
-                <span id="pokemon-name"></span>
-                <span id="pokemon-id"></span>
-            </div>
-            <div>
-                <span id="weight"></span>
-                <span id="height"></span>
-            </div>
-            <div id="pokemon-image">
-                <div id="image-display"></div>
-                <div id="types"></div>
-            </div>
-            <div id="pokemon-display-bottom">
-                <table id="pokemon">
-                    <tr>
-                        <th>BASE</th>
-                        <th>STATS</th>
-                    </tr>
-                    <tr>
-                        <td>HP:</td>
-                        <td id="hp"></td>
-                    </tr>
-                    <tr>
-                        <td>Attack:</td>
-                        <td id="attack"></td>
-                    </tr>
-                    <tr>
-                        <td>Defense:</td>
-                        <td id="defense"></td>
-                    </tr>
-                    <tr>
-                        <td>Sp Attack:</td>
-                        <td id="special-attack"></td>
-                    </tr>
-                    <tr>
-                        <td>Sp Defense:</td>
-                        <td id="special-defense"></td>
-                    </tr>
-                    <tr>
-                        <td>Speed:</td>
-                        <td id="speed"></td>
-                    </tr>
-                </table>
+        <div id="pokemon-container">
+            <form id="pokemon-form">
+                <label for="search-input">Search for Pokémon Name or ID</label><br>
+                <div class="input-container">
+                    <input type="text" id="search-input" placeholder="Select Pokemon" required>
+                    <button id="search-button">Search</button>
+                </div>
+            </form>
+            <div id="pokemon-info">
+                <div id="pokemon-display-top">
+                    <span id="pokemon-name"></span>
+                    <span id="pokemon-id"></span>
+                </div>
+                <div class="weight-height">
+                    <span id="weight"></span>
+                    <span id="height"></span>
+                </div>
+                <div id="pokemon-image">
+                    <div id="image-display"></div>
+                    <div id="types"></div>
+                </div>
+                <div id="pokemon-display-bottom">
+                    <table id="pokemon">
+                        <tr class="table-header">
+                            <th>BASE</th>
+                            <th>STATS</th>
+                        </tr>
+                        <tr class="table-hp">
+                            <td>HP:</td>
+                            <td id="hp"></td>
+                        </tr>
+                        <tr class="table-attack">
+                            <td>Attack:</td>
+                            <td id="attack"></td>
+                        </tr>
+                        <tr class="table-defense">
+                            <td>Defense:</td>
+                            <td id="defense"></td>
+                        </tr>
+                        <tr class="table-sp-attack">
+                            <td>Sp Attack:</td>
+                            <td id="special-attack"></td>
+                        </tr>
+                        <tr class="table-sp-defense">
+                            <td>Sp Defense:</td>
+                            <td id="special-defense"></td>
+                        </tr>
+                        <tr class="table-speed">
+                            <td>Speed:</td>
+                            <td id="speed"></td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </div>
     </main>

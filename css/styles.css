@@ -17,6 +17,88 @@ body {
 
 header {
     padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
 }
+
+#pokemon-container {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+label {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+
+input {
+    background-color: #FFF;
+    width: 70%;
+    padding: 6px;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #000;
+}
+
+input[type="text"] {
+    font-size: 1.2rem;
+    color: #000;
+}
+
+/* Button */
+
+button {
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 4.5px;
+}
+
+/* Pokemon Information Display */
+
+#pokemon-info {
+    padding-top: 10px;
+}
+
+#pokemon-display-top {
+    margin-bottom: 10px;
+}
+
+#pokemon-name {
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+#pokemon-id {
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.weight-height {
+    margin-bottom: 10px;
+}
+
+#weight, #height {
+    font-size: 18px;
+}
+
+#height {
+    margin-left: 10px;
+}
+
+#image-display, img {
+    height: 275px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+g    margin-bottom: 12px;
+}
+
+/* types */
+
+/* Pokemon Display Bottom */
+
+
 
